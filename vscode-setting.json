@@ -1,0 +1,124 @@
+{
+  "editor.fontSize": 17,
+  "terminal.integrated.fontSize": 14,
+  "files.autoSave": "onFocusChange",
+  "workbench.colorTheme": "Material Theme",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "inline",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  // 粘贴自动格式化
+  "editor.formatOnPaste": true,
+  // 保存时自动格式化
+  "editor.formatOnSave": true,
+  // "[html]": {
+  //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[javascript]": {
+  //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[jsonc]": {
+  //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // eslint 配置
+  "eslint.autoFixOnSave": true,
+  "eslint.options": {
+    //"configFile": "/Users/chiefgunner/Code/.eslintrc.js"
+    //"configFile": "/Users/chiefgunner/Code/imocc/.eslintrc.js"
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "html", "vue"],
+  "eslint.run": "onSave",
+  //.vue文件template格式化支持，并使用js-beautify-html插件
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  //"vetur.format.defaultFormatter.js": "vscode-typescript",
+  //vscode-typescript
+  "vetur.format.defaultFormatterOptions": {
+    // 在方法括号之间插入空格
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "prettier": {
+      // prettier 格式化配置
+      "eslintIntegration": true, //开启 eslint 支持
+      "semi": false, //不使用分号结尾
+      "tabWidth": 2,
+      "useTabs": true,
+      "singleQuote": true, //使用单引号
+      "jsxBracketSameLine": true
+    },
+    "prettyhtml": {
+      "printWidth": 100, // No line exceeds 100 characters
+      "singleQuote": false // Prefer double quotes over single quotes
+    },
+    // 对属性进行换行。
+    // - auto: 仅在超出行长度时才对属性进行换行。
+    // - force: 对除第一个属性外的其他每个属性进行换行。
+    // - force-aligned: 对除第一个属性外的其他每个属性进行换行，并保持对齐。
+    // - force-expand-multiline: 对每个属性进行换行。
+    // - aligned-multiple: 当超出折行长度时，将属性进行垂直对齐。
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline",
+      "wrap_line_length": 120,
+      "end_with_newline": false
+      // "end_with_newline": false, // End output with newline
+      // "indent_char": " ", // Indentation character
+      // "indent_handlebars": false, // e.g. {{#foo}}, {{/foo}}
+      // "indent_inner_html": false, // Indent <head> and <body> sections
+      // "indent_scripts": "keep", // [keep|separate|normal]
+      // "indent_size": 2, // Indentation size
+      // "indent_with_tabs": false,
+      // "max_preserve_newlines": 1, // Maximum number of line breaks to be preserved in one chunk (0 disables)
+      // "preserve_newlines": true, // Whether existing line breaks before elements should be preserved
+      // "unformatted": [], // Tags that shouldn't be formatted. Causes mis-alignment
+      // "wrap_line_length": 0, // Lines should wrap at next opportunity after this number of characters (0 disables)
+      // "wrap_attributes": "force-expand-multiline"// Wrap attributes to new lines [auto|force|force-aligned|force-expand-multiline] ["auto"]
+    }
+  },
+  //根据文件后缀名定义vue文件类型
+  "files.associations": {
+    "*.vue": "vue",
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript"
+  },
+  // prettier配置
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  //"prettier.tabWidth": 2,
+  // "prettier.useTabs": true,
+  // "workbench.startupEditor": "newUntitledFile",
+  // "explorer.confirmDragAndDrop": false,
+  // "prettier.jsxBracketSameLine": true,//
+  //emmet
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.showExpandedAbbreviation": "always", // required to work with
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "vue": "html",
+    "*.tpl": "html",
+    "wxml": "html"
+  },
+  "emmet.syntaxProfiles": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  //element ui
+  "element-helper.language": "zh-CN",
+  "element-helper.version": "2.4",
+  "element-helper.indent-size": 2,
+  "element-helper.quotes": "double",
+  "element-helper.pug-quotes": "single",
+  "minapp-vscode.disableAutoConfig": true,
+  "editor.formatOnType": true,
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+  //end
+}
